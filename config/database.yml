@@ -24,6 +24,9 @@ default: &default
 development:
   <<: *default
   database: UuidApplication_development
+  host: 127.0.0.1
+  schema_search_path: "public, banana"
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
